@@ -137,13 +137,17 @@ if __name__ == '__main__':
     parser.add_argument(
         '--root_dir', default="dataset", type=str, help='path to Point Cloud data')
     parser.add_argument(
+        '--subdir_rgbd', default="DenseMatch_RGBD", type=str, help='subdir containing scenes with RGBD data')        
+    parser.add_argument(
+        '--subdir_pcd', default="DenseMatch_Pointcloud", type=str, help='subdir containing scenes with point cloud data')                
+    parser.add_argument(
         '--scene', default="dummy_01", type=str, help='Name of the scene to load')
     parser.add_argument(
         '--extract_pcd', action='store_true', help='Extract point cloud for each rgbd created')        
 
     config = parser.parse_args()
 
-    subdir = "DenseMatch_RGBD" if config.source_data == 'rgbd' else "DenseMatch_Pointcloud"
+    subdir = config.subdir_rgbd if config.source_data == 'rgbd' else config.subdir_pcd
     input_dir = os.path.join(config.root_dir, subdir)
 
     # Single Scene
