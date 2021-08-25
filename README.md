@@ -14,7 +14,10 @@ url = {https://doi.org/10.7910/DVN/CU4UXG}
 ```
 For any question, please contact me at m.lombardi020@unibs.it
 
-### Download Dataset
+## License
+Our code is released under the GNU Genereal Public License v3.0 (see [LICENSE](LICENSE) for more details).
+
+## Download Dataset
 In order to use the dataset, please go to https://doi.org/10.7910/DVN/CU4UXG
 This is the Dataverse repository containing the direct link to the zip file (20 GB total).
 In the zip file there is a folder containing a .npz file for each scene all point clouds data and a .tar.gz file for all the scenes containing the rgb-d data. 
@@ -30,7 +33,7 @@ In the end the tree should be like this:
       -> scene 1.npz
       -> scene 2.npz
 
-### Reader
+## Reader
 The code requires only numpy, argparse and Open3d (http://www.open3d.org/). They can be easily installed via pip:
 ```
 pip install numpy open3d argparse
