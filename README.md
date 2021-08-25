@@ -1,11 +1,11 @@
 # 3DenseMatch_dataset
 This repository contains the reader for DenseMatch dataset, which refers to _Lombardi M., Savardi M. Signoroni A. - 2021, "DenseMatch: a dataset for real-time 3D reconstruction"_.
 If you find this code useful or we you to use the dataset in your work, please consider citing:
-```shell
+```latex
 @data{DVN/CU4UXG_2021,
 author = {Lombardi, Marco and Savardi. Mattia and Signoroni, Alberto},
 publisher = {Harvard Dataverse},
-title = {{DenseMatch: a dataset for real-time 3D reconstruction}},
+title = {DenseMatch: a dataset for real-time 3D reconstruction},
 year = {2021},
 version = {V1},
 doi = {10.7910/DVN/CU4UXG},
